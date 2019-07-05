@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		body{
+			margin: 0;
+		}
+		.container{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 25vw;
+			width: 100%;
+			background: grey;
+			color: white;
+		}
+			.todoItems, button{
+			padding: 10px 25px;
+		}
+		#todos{
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			justify-content: center;
+			align-items: center;
+			border: 1px solid black;
+		}
+		#todos div{
+			display: flex;
+			padding: 10px;
+		}
+		#todos div, p{
+			padding: 10px;
+		}
+	</style>
+	<div class="container">
+		<div class="todoList">
+			<div class="todoItems">
+				<h1 id="items">To do List</h1>
+				<input type="text" id="inputText">
+				<button onclick="add()">add</button>
+			</div>
+		
+		</div>
+	</div>	
+		<div id="todos">
+				<!-- <button onclick="remove()">delete</button> -->
+			</div>
+			<button onclick="showTodo()">show todo</button>
+	<script type="text/javascript" src="./js.js"></script>
+</body>
+</html>
