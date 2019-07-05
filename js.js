@@ -29,7 +29,7 @@ add=()=>{
 		todos.appendChild(div);
 
 		var p = document.createElement('p')
-		p.innerHTML = text;
+		p.innerHTML = text + text;
 		div.appendChild(p);
 
 		var remove = document.createElement('button')
